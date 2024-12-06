@@ -6,8 +6,8 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import db from './config/connection.js';
 import routes from './routes/index.js';
-import typeDefs from './graphql/typeDefs.js'; // Import GraphQL type definitions
-import resolvers from './graphql/resolvers.js'; // Import GraphQL resolvers
+import typeDefs from './schemas/typeDefs';
+import resolvers from './schemas/resolvers';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 

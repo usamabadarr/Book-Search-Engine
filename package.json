@@ -1,0 +1,22 @@
+{
+    "name": "book-search-engine",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/server.js",
+    "scripts": {
+      "start": "cd server && npm run start",
+      "dev": "cd server && npm run watch",
+      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+      "render-build": "npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    
+    "dependencies": {
+      "graphql-tag": "^2.12.6"
+    }
+  }
+  

@@ -9,7 +9,7 @@ import {
 } from '../../controllers/user-controller.js';
 
 // import middleware
-import { authenticateToken } from '../../services/auth.js';
+import { authenticateToken } from '../../services/auth.ts';
 
 // put authMiddleware anywhere we need to send a token for verification of user
 router.route('/').post(createUser).put(authenticateToken, saveBook);

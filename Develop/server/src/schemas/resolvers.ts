@@ -1,5 +1,5 @@
 import User from './models/User'; // Assume you have a User model for MongoDB or Mongoose
-import bcrypt from 'bcryptjs';
+import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 const resolvers = {
